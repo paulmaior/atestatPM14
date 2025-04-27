@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mazda - Feel Alive</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/spritespin@4.0.11/release/spritespin.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/spritespin@4.0.11/release/spritespin.css" rel="stylesheet">
+</head>
+<body>
+  <header class="top-nav">
+    <img src="1 - mazda-usa-logo.jpg" alt="Mazda Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#celebration">About</a></li>
+        <li><a href="#feature-car">Features</a></li>
+        <li><a href="#car-viewer">Colors</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#" class="cta-button">Build Yours</a></li>
+      </ul>
+    </nav>
+    <button class="mobile-menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <nav class="section-nav">
+    <ul>
+      <li><a href="#hero" class="active" data-section="hero"></a></li>
+      <li><a href="#celebration" data-section="celebration"></a></li>
+      <li><a href="#feature-car" data-section="feature-car"></a></li>
+      <li><a href="#car-viewer" data-section="car-viewer-section"></a></li>
+      <li><a href="#faq" data-section="faq-section"></a></li>
+    </ul>
+  </nav>
+  
+  <section id="hero" class="hero">
+    <div class="hero-text">
+      <h1>Mazda<br><span class="tagline">"Feel Alive"</span></h1>
+      <p>High octane.<br>Top speed.<br>Big heart.</p>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+  <section id="celebration" class="celebration">
+    <div class="celebration-content">
+      <video height="400px" autoplay muted loop controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+      <div class="text">
+        <h2>CELEBRATE THE PEOPLE WHO MOVE YOU.</h2>
+        <p>No one moves forward alone. Through moments big and small, everyone has had that one person who believed in them – seeing their success even before they could see it themselves. But not everyone gets to say thank you. Until now. Take a moment to thank those who've moved you – mentors, friends, family. Share your story using #IWantToThank and help create space for gratitude in our everyday lives.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="feature-car" class="feature-car">
+    <div class="feature-text">
+      <h3>IMPOSSIBLE TO IGNORE</h3>
+      <h1>THE 2025 MAZDA MX-5 MIATA</h1>
+    </div>
+  </section>
+  <section id="car-viewer" class="car-viewer-section">
+    <div class="color-selector">
+        <button class="color-btn" data-color="red" style="background-image:url(colors/red.jpg); background-size:cover; background-repeat: no-repeat;"></button>
+        <button class="color-btn" data-color="white" style="background-image:url(colors/white.jpg);background-size:cover; background-repeat: no-repeat;"></button>
+        <button class="color-btn" data-color="gray" style="background-image:url(colors/gray.jpg);background-size:cover; background-repeat: no-repeat;"></button>
+        <button class="color-btn" data-color="blue" style="background-image:url(colors/blue.jpg);background-size:cover; background-repeat: no-repeat;"></button>
+        <button class="color-btn" data-color="black" style="background-image:url(colors/black.jpg);background-size:cover; background-repeat: no-repeat;"></button>
+      </div>
+    <div id="carViewer" class="car-viewer"></div>
+</section>
+
+  <script src="script.js"></script>
+
+  <section id="faq" class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-question">
+                What's new in the 2025 MX-5 Miata?
+                <span class="arrow"></span>
+            </button>
+            <div class="faq-answer">
+                <p>The 2025 MX-5 Miata features enhanced performance, updated styling, and new technology features including improved infotainment system and advanced driver assistance systems.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What is the fuel efficiency?
+                <span class="arrow"></span>
+            </button>
+            <div class="faq-answer">
+                <p>The 2025 MX-5 Miata achieves excellent fuel economy with an EPA-estimated 26 city / 34 highway MPG.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                What safety features are included?
+                <span class="arrow"></span>
+            </button>
+            <div class="faq-answer">
+                <p>Standard safety features include blind spot monitoring, rear cross-traffic alert, smart city brake support, and lane departure warning system.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                Is the soft top manual or automatic?
+                <span class="arrow"></span>
+            </button>
+            <div class="faq-answer">
+                <p>The MX-5 Miata features a manual soft top that can be easily operated with one hand from the driver's seat.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                Who made this site ?
+                <span class="arrow"></span>
+            </button>
+            <div class="faq-answer">
+                <p>The kid. Paul Maior.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Mazda & Paul Maior. All rights reserved.</p>
+    <p>Privacy Policy | Terms of Service</p>
+  
+
+</body>
+</html>
